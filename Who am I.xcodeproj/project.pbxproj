@@ -13,6 +13,10 @@
 		4727B138205C296D005D6820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4727B137205C296D005D6820 /* Assets.xcassets */; };
 		4727B13B205C296D005D6820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4727B139205C296D005D6820 /* LaunchScreen.storyboard */; };
 		4727B13E205C296D005D6820 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4727B13D205C296D005D6820 /* main.m */; };
+		4727B147205C2BCA005D6820 /* iOSSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4727B144205C2BC9005D6820 /* iOSSpeechViewController.m */; };
+		4727B148205C2BCA005D6820 /* iOSSpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4727B146205C2BCA005D6820 /* iOSSpeechViewController.xib */; };
+		4727B14A205C2BD4005D6820 /* 录音.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4727B149205C2BD4005D6820 /* 录音.m4a */; };
+		4727B14D205C3277005D6820 /* XYBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4727B14C205C3277005D6820 /* XYBaseVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		4727B13A205C296D005D6820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4727B13C205C296D005D6820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4727B13D205C296D005D6820 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4727B144205C2BC9005D6820 /* iOSSpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSSpeechViewController.m; sourceTree = "<group>"; };
+		4727B145205C2BC9005D6820 /* iOSSpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSSpeechViewController.h; sourceTree = "<group>"; };
+		4727B146205C2BCA005D6820 /* iOSSpeechViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOSSpeechViewController.xib; sourceTree = "<group>"; };
+		4727B149205C2BD4005D6820 /* 录音.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "录音.m4a"; sourceTree = "<group>"; };
+		4727B14B205C3277005D6820 /* XYBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBaseVC.h; sourceTree = "<group>"; };
+		4727B14C205C3277005D6820 /* XYBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBaseVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,10 @@
 		4727B12D205C296D005D6820 /* Who am I */ = {
 			isa = PBXGroup;
 			children = (
+				4727B149205C2BD4005D6820 /* 录音.m4a */,
+				4727B145205C2BC9005D6820 /* iOSSpeechViewController.h */,
+				4727B144205C2BC9005D6820 /* iOSSpeechViewController.m */,
+				4727B146205C2BCA005D6820 /* iOSSpeechViewController.xib */,
 				4727B12E205C296D005D6820 /* AppDelegate.h */,
 				4727B12F205C296D005D6820 /* AppDelegate.m */,
 				4727B131205C296D005D6820 /* ViewController.h */,
@@ -67,6 +81,8 @@
 				4727B139205C296D005D6820 /* LaunchScreen.storyboard */,
 				4727B13C205C296D005D6820 /* Info.plist */,
 				4727B13D205C296D005D6820 /* main.m */,
+				4727B14B205C3277005D6820 /* XYBaseVC.h */,
+				4727B14C205C3277005D6820 /* XYBaseVC.m */,
 			);
 			path = "Who am I";
 			sourceTree = "<group>";
@@ -97,6 +113,7 @@
 		4727B123205C296D005D6820 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XY;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = HMRL;
 				TargetAttributes = {
@@ -129,8 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4727B14A205C2BD4005D6820 /* 录音.m4a in Resources */,
 				4727B13B205C296D005D6820 /* LaunchScreen.storyboard in Resources */,
 				4727B138205C296D005D6820 /* Assets.xcassets in Resources */,
+				4727B148205C2BCA005D6820 /* iOSSpeechViewController.xib in Resources */,
 				4727B136205C296D005D6820 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4727B14D205C3277005D6820 /* XYBaseVC.m in Sources */,
 				4727B133205C296D005D6820 /* ViewController.m in Sources */,
 				4727B13E205C296D005D6820 /* main.m in Sources */,
+				4727B147205C2BCA005D6820 /* iOSSpeechViewController.m in Sources */,
 				4727B130205C296D005D6820 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,8 +300,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45L2BJS8P9;
+				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = "Who am I/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiaoyangyang.Who-am-I";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,8 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45L2BJS8P9;
+				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = "Who am I/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiaoyangyang.Who-am-I";
 				PRODUCT_NAME = "$(TARGET_NAME)";

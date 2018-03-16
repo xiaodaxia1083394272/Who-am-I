@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#import <Speech/Speech.h>
+#import <AVFoundation/AVFoundation.h>
+#import "iOSSpeechViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -16,9 +20,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+}
+- (IBAction)voiceDdentify:(id)sender {
+    iOSSpeechViewController *navi = [iOSSpeechViewController new];
+    [self presentViewController:navi animated:YES completion:^{
+        
+    }];
+    
 }
 
+- (IBAction)videoIdentify:(id)sender {
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
