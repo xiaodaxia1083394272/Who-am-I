@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+//修改测试
+@property (nonatomic,strong) NSString *a;
 
 @end
 
