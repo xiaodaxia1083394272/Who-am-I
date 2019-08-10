@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *a = @"测试分支2";
 
 }
 - (IBAction)voiceDdentify:(id)sender {
